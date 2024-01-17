@@ -1,0 +1,303 @@
+.abs {
+    position: absolute;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.josefin {
+    font-family: 'Josefin', sans-serif;
+}
+
+.header * {
+    margin: 0;
+}
+
+.header-left {
+    margin: 35px 0 0 50px;
+}
+
+.header-right {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.header-right img{
+    max-height: 100px;
+    max-width: auto;
+}
+
+.project-name {
+    font-size: 3em;
+    
+}
+
+.date {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.location {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.skills {
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+}
+.section-title {
+    font-family: "Josefin";
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.left-div {
+    flex: 0.5 0 auto; /* Prevent left div from growing */
+}
+.mid-div {
+    flex: 0.25 0 auto; /* Prevent left div from growing */
+}
+
+.right-div {
+    flex: 1; /* Allow center div to grow and take available space */
+    text-align: left;
+}
+
+.logos, .soft-skills {
+    display: block;
+    margin-top: 10px;
+}
+
+.logo-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 1;
+}
+  
+.logo-container img {
+    display: block;
+    height: 50px;
+    width: auto;
+}
+.soft-skill {
+    background-color: #ec95ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 0.75em;
+    color: #120618;
+    line-height: 2;
+}
+
+.tasks {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.soft-skill {
+    margin-bottom: 5px;
+}
+
+:root {
+    --bg: #fdfdfd;
+    --highlight1: #ed4278;
+    --highlight2: #fff5db;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head: "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.list {
+    list-style: none;
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: inline-block;
+    clear: both;
+    counter-increment: list;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+    width: 30%;
+    text-align: justify;
+}
+
+.item:before {
+    font: bold 2.25rem/1 var(--font-number);
+    content: counter(list);
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: var(--bg);
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+}
+
+.item:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--highlight1);
+    z-index: -1;
+    border-top-left-radius: 3px;
+}
+
+
+.headline {
+    padding: 0rem 0 0 0;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+/* Navigateur */
+.navigator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .arrow-wrapper {
+    display: flex;
+    align-items: center;
+}
+ .block {
+    width: 300px;
+    height: 70px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ h1 {
+    color: #001432;
+    opacity: 0.4;
+    text-align: center;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+ .arrow-wrapper:hover h1 {
+    opacity: 1;
+}
+/*************** * Arrow 2 ***************/
+ .arrow_2 .arrow {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    align-items: flex-start;
+    text-transform: uppercase;
+    position: relative;
+    transition: transform 0.3s;
+}
+ .arrow_2 .arrow span {
+    display: block;
+    width: 11em;
+    opacity: 0;
+    transition: opacity 0.3s 0s;
+    padding: 0 0.5em;
+}
+
+.arrow_2 .arrow--left span {
+    display: block;
+    width: 11em;
+    opacity: 0;
+    transition: opacity 0.3s 0s;
+    padding: 0 0.5em;
+}
+ .arrow_2 .arrow:hover span {
+    opacity: 1;
+    transition: opacity 0.3s 0.1s;
+}
+ .arrow_2 .arrow:before {
+    content: '';
+    display: block;
+    border: solid #fff;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+}
+
+.arrow_2 .arrow.arrow--left {
+    margin-right: 5px;
+}
+
+.arrow_2 .arrow.arrow--left:before {
+    transform: rotate(-135deg);
+    right: 0;
+    transition: right 0.3s 0.2s;
+}
+.arrow_2 .arrow.arrow--left:hover:before {
+    right: 100%;
+    transition: right 0.3s;
+}
+
+.arrow_2 .arrow.arrow--right {
+    text-align: right;
+    margin-left: 5px;
+}
+
+.arrow_2 .arrow.arrow--right:before {
+    left: 0;
+    transform: rotate(45deg);
+    transition: left 0.3s 0.2s;
+}
+.arrow_2 .arrow.arrow--right:hover:before {
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.arrow_2 .arrow:hover {
+    transform: none;
+}
+ 
+.arrow_2 .block h1 {
+    margin: 0;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    min-width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    max-width: 100vw;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
