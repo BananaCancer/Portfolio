@@ -16,10 +16,10 @@
     border-radius: 2%;
     background: linear-gradient(to right bottom, hsla(277.2, 15%, 62.2%, 0.18), hsla(254.1, 55.5%, 46.7%, 0.18));
     color: white;
-    box-shadow: 5px 5px 5px rgba(203, 120, 255, 0.371), 
-    -5px -5px 5px rgba(203, 120, 255, 0.371), 
-    5px -5px 5px rgba(255, 255, 255, 0.344), 
-    -5px 5px 5px rgba(255, 255, 255, 0.344);
+    box-shadow: 5px 5px 4px rgba(203, 120, 255, 0.371), 
+    -5px -5px 4px rgba(203, 120, 255, 0.371),
+    5px -5px 4px rgba(203, 120, 255, 0.371), 
+    -5px 5px 4px rgba(203, 120, 255, 0.371);
     margin-bottom: 15px;
 }
 

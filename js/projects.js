@@ -99,11 +99,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.onkeydown = checkKey;
 
+function preventDefault(event) {
+    if (event.keyCode == "40" || event.keyCode == "38") {
+        event.preventDefault()
+    }
+}
+
 input.addEventListener('keypress', preventDefault, false);
 
-function preventDefault(event) {
-    event.preventDefault()
-}
 
 function checkKey(e) {
 
