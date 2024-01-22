@@ -96,15 +96,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 document.onkeydown = checkKey;
+
+input.addEventListener('keypress', preventDefault, false);
+
+function preventDefault(event) {
+    event.preventDefault()
+}
 
 function checkKey(e) {
 
     e = e || window.event;
     if (e.keyCode == '38') {
+        e.preventDefault();
         prevSlide() 
     }
     else if (e.keyCode == '40') {
+        e.preventDefault();
         nextSlide()
     }
     else if (e.keyCode == '37') {
