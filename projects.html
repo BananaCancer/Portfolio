@@ -3,45 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basil's Portfolio</title>
+    <title>Basil Courbayre - Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
+    <nav>
+        <a class="nav-item" href="about.html">
+            About
+        </a>
+        <a class="nav-item" href="education.html">
+            Education
+        </a>
+        <a class="nav-item active" href="projects.html">
+            My projects
+        </a>
+        <a class="nav-item" href="doc/CV_Courbayre_Canada.pdf" target="_blank">
+                CV
+        </a>
+        <div class="dropdown nav-item">
+            <div class="trigger">Contact</div>
+            <div class="content">
+                <a href="mailto:basil.cd.pro@gmail.com" class="square" target="_blank">
+                    <img src="img/mail.png" alt="Mail Contact">
+                </a>
+                <a href="https://discord.com/users/232197265958109185" class="square" target="_blank">
+                    <img src="img/Discord.png" alt="Discord Contact">
+                </a>
+                <a class="square" href="https://github.com/BananaCancer" target="_blank">
+                    <img src="img/GitHub_circle.png" alt="Github contact">
+                </a>
+                <a href="https://www.linkedin.com/in/basil-courbayre-2a4661b0/" class="square" target="_blank">
+                    <img src="img/Linkedin.png" alt="LinkedIn contact">
+                </a>
+            </div>
+        </a>
+    </nav>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="slide-container">
         <div class="slide" id="slide1">
             <div class="header">
                 <div class="header-left">
-                    <p class="project-name josefin">Research Assistant</p>
-                    <p class="date josefin">April 2023 - August 2023 (4 months)</p>
-                    <p class="location josefin">University of Turku, Turku, Finland</p>
+                    <p class="project-name josefin">
+                        AI project member
+                        <a href="https://github.com/IIanonymeII/8INF972_Atelier_pratique_AI" target="_blank">
+                            <div class="logo-container">
+                                <img src="img/GitHub.png" alt="Link to Github repository">
+                            </div>
+                        </a>
+                    </p>
+                    <p class="date josefin">September 2023 - December 2023 (4 months)</p>
+                    <p class="location josefin">Academic project, UQAC, Chicoutimi, Québec, Canada</p>
                 </div>
                 <div class="header-right">
-                    <img src="img/mia.png" alt="Mia Logo">
+                    <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="video/Odyssey.mp4" data-target="#myModal">
+                        Demonstration
+                    </button>
                 </div>
             </div>
             <div class="skills">
-                <div class="section-title left-div">Project description
-                    
-                </div>
-                <div class="section-title mid-div">Technical skills
-                    <div class="logos">
-                        <div class="logo-container">
-                            <img src="img/R.png" alt="R language logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/GitHub.png" alt="Github logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/Bioconductor.png" alt="Bioconductor logo">
+                <div class="inner-skills">
+                    <div class="section-title left-div">Project description
+                        <div class="content">
+                            Academic project where we developed a web app in which we used AI 
+                            to predict a movie's box office success, as well as generate its title, 
+                            and scenario. The app also provided some insights on the best months to 
+                            release the movie and some actors that could be cast.
                         </div>
                     </div>
-                </div>
-                <div class="section-title right-div">Soft skills
-                    <div class="soft-skills">
-                        <span class="soft-skill">Autonomy</span>
-                        <span class="soft-skill">Communication</span>
-                        <span class="soft-skill">Decision-making</span>
+                    <div class="section-title mid-div">Technical skills
+                        <div class="logos">
+                            <div class="logo-container">
+                                <img src="img/python.png" alt="Python logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/conda.png" alt="Anaconda Logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/spyder.png" alt="Spyder Logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/html.webp" alt="HTML Logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/css.webp" alt="CSS Logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/js.webp" alt="Javascript Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title right-div">Soft skills
+                        <div class="soft-skills">
+                            <span class="soft-skill">Creativity</span>
+                            <span class="soft-skill">Communication</span><br>
+                            <span class="soft-skill">Teamwork</span>
+                            <span class="soft-skill">Time-management</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,24 +121,128 @@
                 <div class="section-title right-div">Tasks</div>
                 <ol class="list">
                     <li class="item">
-                        <h2 class="headline">
-                            Enable clustering on mia project
-                        </h2>
+                        <h2 class="headline">Data gathering</h2>
                         <span>
-                            Created a wrapper in R to facilitate the creation of clusters on microbiome data. 
-                            This tool was created to allow the possibility to cluster data in the mia package easily.
+                            Gathered data (with APIs and scrapping) from websites to get information 
+                            on the movies such as the genres/sub-genres, the domestic/international 
+                            box office, and the budget. The scrapping was done on multiple websites to have as
+                            much data as possible.
                         </span>
                     </li>
                     <li class="item">
-                        <h2 class="headline">Development of Bioconductor project</h2>
+                        <h2 class="headline">Box office prediction</h2>
                         <span>
-                            Discovery of Bioconductor projects and the guidelines to clean code.
+                            Tested various algorithms (Random Forest, Regression, ...) to be able to predict 
+                            the box office of a movie while taking into account its genre, public, 
+                            and associated keywords.
                         </span>
                     </li>
                     <li class="item">
-                        <h2 class="headline">Multi-repository work</h2>
+                        <h2 class="headline">Interface development</h2>
                         <span>
-                            I worked on 3 repositories simultaneously and with various people, which brought me to enhance my communication skills on Github by creating clean issues and pull requests.
+                            Coded the front-end of the application with a front page presenting 
+                            our project and the form to select the input for the movie. 
+                            I also improved the output to have a more eye-catching look.
+                        </span>
+                    </li>
+                </ol>
+            </div>
+            <div class="navigator">              
+                <div id="arrow_2" class="arrow_2 arrow-wrapper">
+                    <a onclick="prevSlide()">
+                        <div class="arrow arrow--left">
+                            <span>Previous Project</span>
+                        </div>
+                    </a>
+                
+                    <div class="block">
+                        <h1>Projects</h1>
+                    </div>
+                    <a onclick="nextSlide()">
+                        <div class="arrow arrow--right">
+                            <span>Next Project</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide2">
+            <div class="header">
+                <div class="header-left">
+                    <p class="project-name josefin">
+                        Data science project member
+                        <a href="https://github.com/BananaCancer/Projet_AppAuto" target="_blank">
+                            <div class="logo-container">
+                                <img src="img/GitHub.png" alt="Link to Github repository">
+                            </div>
+                        </a>
+                    </p>
+                    <p class="date josefin">September 2023 - December 2023 (4 months)</p>
+                    <p class="location josefin">Academic project, UQAC, Chicoutimi, Québec, Canada</p>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="inner-skills">
+                    <div class="section-title left-div">Project description
+                        <div class="content">
+                            Academic project where we used machine learning to 
+                            understand and help improve the sales of a fake company. 
+                            The data used was found on Kaggle.
+                            We used clustering and association rules to find some 
+                            relations between certain clients and the products they bought.
+                        </div>
+                    </div>
+                    <div class="section-title mid-div">Technical skills
+                        <div class="logos">
+                            <div class="logo-container">
+                                <img src="img/python.png" alt="Python language logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/GitHub.png" alt="Github logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/conda.png" alt="Anaconda Logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/spyder.png" alt="Spyder Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title right-div">Soft skills
+                        <div class="soft-skills">
+                            <span class="soft-skill">Creativity</span>
+                            <span class="soft-skill">Positive attitude</span><br>
+                            <span class="soft-skill">Teamwork</span>
+                            <span class="soft-skill">Presentation skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks">
+                <div class="section-title right-div">Tasks</div>
+                <ol class="list">
+                    <li class="item">
+                        <h2 class="headline">Client clusters creation</h2>
+                        <span>
+                            I tested multiple clustering algorithms to regroup the 
+                            clients depending on their profile (income/recency/expenses).
+                            I tested multiple types of algorithms (GMM, KMeans) and judged their quality 
+                            mainly using their silhouette.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Client profil association</h2>
+                        <span>
+                            Using association rules, I associated different client features to 
+                            help the analysis of the data.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Result analysis</h2>
+                        <span>
+                            Using the previous results, I gave some (hypothetical) guidelines 
+                            to the company so that they can improve their sales 
+                            for some products.
                         </span>
                     </li>
                 </ol>
@@ -81,95 +257,6 @@
                     <div class="block">
                         <h1>Projects</h1>
                     </div>
-                
-                    <a onclick="nextSlide()">
-                        <div class="arrow arrow--right">
-                            <span>Next Project</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="slide" id="slide2">
-            <div class="header">
-                <div class="header-left">
-                    <p class="project-name josefin">AI project member</p>
-                    <p class="date josefin">September 2023 - December 2023 (4 months)</p>
-                    <p class="location josefin">Academic project, UQAC, Chicoutimi, Québec, Canada</p>
-                </div>
-                <div class="header-right">
-                    <img src="img/mia.png" alt="Mia Logo">
-                </div>
-            </div>
-            <div class="skills">
-                <div class="section-title left-div">Project description
-                    
-                </div>
-                <div class="section-title mid-div">Technical skills
-                    <div class="logos">
-                        <div class="logo-container">
-                            <img src="img/python.png" alt="Python logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/conda.png" alt="Anaconda Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/spyder.png" alt="Spyder Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/html.webp" alt="HTML Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/css.webp" alt="CSS Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/js.webp" alt="Javascript Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="section-title right-div">Soft skills
-                    <div class="soft-skills">
-                        <span class="soft-skill">Creativity</span>
-                        <span class="soft-skill">Communication</span><br>
-                        <span class="soft-skill">Teamwork</span>
-                        <span class="soft-skill">Time-management</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tasks">
-                <div class="section-title right-div">Tasks</div>
-                <ol class="list">
-                    <li class="item">
-                        <h2 class="headline">Data gathering</h2>
-                        <span>
-                            Gathered data from websites to get information on the movies such as the genres/sub-genres, the domestic/international box office, and the budget.
-                        </span>
-                    </li>
-                    <li class="item">
-                        <h2 class="headline">Box office prediction</h2>
-                        <span>
-                            Tested various algorithms to be able to predict the box office of a movie while taking into account its genre, public, and associated keywords.
-                        </span>
-                    </li>
-                    <li class="item">
-                        <h2 class="headline">Interface development</h2>
-                        <span>
-                            Coded the front-end of the application with a front page presenting our project and the form to select the input for the movie.
-                        </span>
-                    </li>
-                </ol>
-            </div>
-            <div class="navigator">              
-                <div id="arrow_2" class="arrow_2 arrow-wrapper">
-                    <a onclick="prevSlide()">
-                        <div class="arrow arrow--left">
-                            <span>Prev Project</span>
-                        </div>
-                    </a>
-                
-                    <div class="block">
-                        <h1>Projects</h1>
-                    </div>
                     <a onclick="nextSlide()">
                         <div class="arrow arrow--right">
                             <span>Next Project</span>
@@ -181,33 +268,49 @@
         <div class="slide" id="slide3">
             <div class="header">
                 <div class="header-left">
-                    <p class="project-name josefin">Research Assistant</p>
-                    <p class="date josefin">April 2023 - August 2023</p>
-                    <p class="location josefin">University of Turku, Turku, Finland</p>
+                    <p class="project-name josefin">
+                        Research Assistant
+                        <a href="https://github.com/microbiome/mia" target="_blank">
+                            <div class="logo-container">
+                                <img src="img/GitHub.png" alt="Link to Github repository">
+                            </div>
+                        </a>
+                    </p>
+                    <p class="date josefin">April 2023 - August 2023 (4 months)</p>
+                    <p class="location josefin">Internship, University of Turku, Turku, Finland</p>
                 </div>
                 <div class="header-right">
                     <img src="img/mia.png" alt="Mia Logo">
                 </div>
             </div>
             <div class="skills">
-                <div class="section-title left-div">Technical skills
-                    <div class="logos">
-                        <div class="logo-container">
-                            <img src="img/R.png" alt="Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/GitHub.png" alt="Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/Bioconductor.png" alt="Logo">
+                <div class="inner-skills">
+                    <div class="section-title left-div">Project description
+                        <div class="content">
+                            Internship where my main task was to add a clustering feature in 
+                            the miaverse project. During this internship, I also discovered the benefits 
+                            of open science and I produced some thoroughly documented code with examples.
                         </div>
                     </div>
-                </div>
-                <div class="section-title right-div">Soft skills
-                    <div class="soft-skills">
-                        <span class="soft-skill">Autonomy</span>
-                        <span class="soft-skill">Communication</span>
-                        <span class="soft-skill">Decision-making</span>
+                    <div class="section-title mid-div">Technical skills
+                        <div class="logos">
+                            <div class="logo-container">
+                                <img src="img/R.png" alt="R language logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/GitHub.png" alt="Github logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/Bioconductor.png" alt="Bioconductor logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title right-div">Soft skills
+                        <div class="soft-skills">
+                            <span class="soft-skill">Autonomy</span>
+                            <span class="soft-skill">Communication</span><br>
+                            <span class="soft-skill">Decision-making</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,16 +318,31 @@
                 <div class="section-title right-div">Tasks</div>
                 <ol class="list">
                     <li class="item">
-                        <h2 class="headline">Number one</h2>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio ad corporis, laboriosam unde provident, architecto tenetur ea odio debitis delectus explicabo eum obcaecati vitae facere iusto laborum consequuntur neque.</span>
+                        <h2 class="headline">Add clustering feature</h2>
+                        <span>
+                            Created a wrapper in R to facilitate the creation of clusters on microbiome data. 
+                            This tool was created to allow the possibility to cluster data in the mia package easily.
+                        </span>
                     </li>
                     <li class="item">
-                        <h2 class="headline">Number two</h2>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio ad corporis, laboriosam unde provident, architecto tenetur ea odio debitis delectus explicabo eum obcaecati vitae facere iusto laborum consequuntur neque.</span>
+                        <h2 class="headline">Multi-repository work</h2>
+                        <span>
+                            I worked on 3 repositories simultaneously and with various people, 
+                            which brought me to enhance my communication skills on Github by 
+                            creating clean issues and pull requests.
+                        </span>
                     </li>
                     <li class="item">
-                        <h2 class="headline">Number three</h2>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio ad corporis, laboriosam unde provident, architecto tenetur ea odio debitis delectus explicabo eum obcaecati vitae facere iusto laborum consequuntur neque.</span>
+                        <h2 class="headline">Development of Bioconductor project</h2>
+                        <span>
+                            Discovery of Bioconductor projects and the guidelines to clean code. 
+                            For all of the code I produced, I also did unit tests as well as documentation
+                            and examples. Finally, I did a 
+                            <a href="https://microbiome.github.io/OMA/docs/devel/pages/24_clustering.html">
+                                tutorial
+                            </a> 
+                            to explain how to cluster data using the features I implemented.
+                        </span>
                     </li>
                 </ol>
             </div>
@@ -232,7 +350,7 @@
                 <div id="arrow_2" class="arrow_2 arrow-wrapper">
                     <a onclick="prevSlide()">
                         <div class="arrow arrow--left">
-                            <span>Prev Project</span>
+                            <span>Previous Project</span>
                         </div>
                     </a>
                 
@@ -250,33 +368,46 @@
         <div class="slide" id="slide4">
             <div class="header">
                 <div class="header-left">
-                    <p class="project-name josefin">Research Assistant</p>
-                    <p class="date josefin">April 2023 - August 2023</p>
-                    <p class="location josefin">University of Turku, Turku, Finland</p>
+                    <p class="project-name josefin">Software developer</p>
+                    <p class="date josefin">February 2023 - April 2023 (3 months)</p>
+                    <p class="location josefin">Academic project, ENSICAEN, Caen, France</p>
                 </div>
                 <div class="header-right">
-                    <img src="img/mia.png" alt="Mia Logo">
+                    <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="video/OW.mp4" data-target="#myModal">
+                        Demonstration
+                    </button>
                 </div>
             </div>
             <div class="skills">
-                <div class="section-title left-div">Technical skills
-                    <div class="logos">
-                        <div class="logo-container">
-                            <img src="img/R.png" alt="Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/GitHub.png" alt="Logo">
-                        </div>
-                        <div class="logo-container">
-                            <img src="img/Bioconductor.png" alt="Logo">
+                <div class="inner-skills">
+                    <div class="section-title left-div">Project description
+                        <div class="content">
+                            Academic project where we were tasked to recreate the Akari 
+                            game using Qt.
                         </div>
                     </div>
-                </div>
-                <div class="section-title right-div">Soft skills
-                    <div class="soft-skills">
-                        <span class="soft-skill">Autonomy</span>
-                        <span class="soft-skill">Communication</span>
-                        <span class="soft-skill">Decision-making</span>
+                    <div class="section-title mid-div">Technical skills
+                        <div class="logos">
+                            <div class="logo-container">
+                                <img src="img/uml.png" alt="UML logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/c++.png" alt="C++ logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/Qt.png" alt="QT logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/GitLab.jpg" alt="GitLab logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title right-div">Soft skills
+                        <div class="soft-skills">
+                            <span class="soft-skill">Creativity</span>
+                            <span class="soft-skill">Teamwork</span><br>
+                            <span class="soft-skill">Attention to detail</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,16 +415,27 @@
                 <div class="section-title right-div">Tasks</div>
                 <ol class="list">
                     <li class="item">
-                        <h2 class="headline">Number one</h2>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio ad corporis, laboriosam unde provident, architecto tenetur ea odio debitis delectus explicabo eum obcaecati vitae facere iusto laborum consequuntur neque.</span>
+                        <h2 class="headline">Back-end construction</h2>
+                        <span>
+                            Built most of the back-end, including an observer design pattern so that 
+                            the game updates automatically whenever an update is made. This eased most 
+                            of the development which allowed us to focus on other details. My partner 
+                            and I also built the game using an MVP architecture.
+                        </span>
                     </li>
                     <li class="item">
-                        <h2 class="headline">Number two</h2>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio ad corporis, laboriosam unde provident, architecto tenetur ea odio debitis delectus explicabo eum obcaecati vitae facere iusto laborum consequuntur neque.</span>
+                        <h2 class="headline">Interface enhancement</h2>
+                        <span>
+                            Overhauled the interface to become slicker and have a more modern 
+                            feel and look.
+                        </span>
                     </li>
                     <li class="item">
-                        <h2 class="headline">Number three</h2>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, distinctio ad corporis, laboriosam unde provident, architecto tenetur ea odio debitis delectus explicabo eum obcaecati vitae facere iusto laborum consequuntur neque.</span>
+                        <h2 class="headline">Added optional functionalities</h2>
+                        <span>
+                            My parter and I came up with original ideas to give our work some 
+                            fun unique features such as color selection or a little sharing feature.
+                        </span>
                     </li>
                 </ol>
             </div>
@@ -301,7 +443,7 @@
                 <div id="arrow_2" class="arrow_2 arrow-wrapper">
                     <a onclick="prevSlide()">
                         <div class="arrow arrow--left">
-                            <span>Prev Project</span>
+                            <span>Previous Project</span>
                         </div>
                     </a>
                 
@@ -316,7 +458,287 @@
                 </div>
             </div>
         </div>
+        <div class="slide" id="slide5">
+            <div class="header">
+                <div class="header-left">
+                    <p class="project-name josefin">Web developer</p>
+                    <p class="date josefin">April 2021 - August 2021 (5 months)</p>
+                    <p class="location josefin">Alcyons, Biarritz, France</p>
+                </div>
+                <div class="header-right">
+                    <img src="img/alcyons.png" alt="Alcyons logo">
+                </div>
+            </div>
+            <div class="skills">
+                <div class="inner-skills">
+                    <div class="section-title left-div">Project description
+                        <div class="content">
+                            Internship and job where I was tasked to do an overhaul of the back-office of the Alcyons 
+                            website as well as create a web app for the employees to manage the training sessions.
+                        </div>
+                    </div>
+                    <div class="section-title mid-div">Technical skills
+                        <div class="logos">
+                            <div class="logo-container">
+                                <img src="img/php.jpg" alt="PHP logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/symfony.png" alt="Symfony logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/html.webp" alt="HTML logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/css.webp" alt="CSS logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/js.webp" alt="JS logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/GitHub.png" alt="Github logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/figma.png" alt="Figma logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title right-div">Soft skills
+                        <div class="soft-skills">
+                            <span class="soft-skill">Time-management</span>
+                            <span class="soft-skill">Communication</span><br>
+                            <span class="soft-skill">Autonomy</span>
+                            <span class="soft-skill">Commitment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks">
+                <div class="section-title right-div">Tasks</div>
+                <ol class="list">
+                    <li class="item">
+                        <h2 class="headline">Interface overhaul</h2>
+                        <span>
+                            I reworked the existing interface in multiple ways. Using Figma, 
+                            I suggested changes to the existing official website of the company 
+                            as well as to the back-office so that they had a more modern feel.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Full-stack development</h2>
+                        <span>
+                            I used my Figma prototypes to overhaul the front-end of the 
+                            back-office of the company. I also completely redesigned the back-end using Symfony.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Creation of a training application </h2>
+                        <span>
+                            I also continued my work in Symfony so that the company can manage 
+                            (create, modify, delete) its various planned trainings. I once again worked 
+                            on both the front-end and the back-end and helped create an API to handle the
+                            management requests (GET/POST/DELETE).
+                        </span>
+                    </li>
+                </ol>
+            </div>
+            <div class="navigator">              
+                <div id="arrow_2" class="arrow_2 arrow-wrapper">
+                    <a onclick="prevSlide()">
+                        <div class="arrow arrow--left">
+                            <span>Previous Project</span>
+                        </div>
+                    </a>
+                
+                    <div class="block">
+                        <h1>Projects</h1>
+                    </div>
+                    <a onclick="nextSlide()">
+                        <div class="arrow arrow--right">
+                            <span>Next Project</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide6">
+            <div class="header">
+                <div class="header-left">
+                    <p class="project-name josefin">Web developer</p>
+                    <p class="date josefin">March 2021 - April 2021 (2 months)</p>
+                    <p class="location josefin">IUT de Bayonne, Bayonne, France</p>
+                </div>
+                <div class="header-right">
+                    <img src="img/iut.jpg" alt="IUT de Bayonne logo">
+                </div>
+            </div>
+            <div class="skills">
+                <div class="inner-skills">
+                    <div class="section-title left-div">Project description
+                        <div class="content">
+                            Academic project where I developed an API that creates a trip schedule to visit a movie's filming locations.
+                            The API took as input, the departure, the movie name, and the date of departure and from that built the travel plans using real plane data.
+                        </div>
+                    </div>
+                    <div class="section-title mid-div">Technical skills
+                        <div class="logos">
+                            <div class="logo-container">
+                                <img src="img/php.jpg" alt="PHP logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/html.webp" alt="HTML logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/css.webp" alt="CSS logo">
+                            </div>
+                            <div class="logo-container">
+                                <img src="img/GitHub.png" alt="Github logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title right-div">Soft skills
+                        <div class="soft-skills">
+                            <span class="soft-skill">Creativity</span>
+                            <span class="soft-skill">Autonomy</span><br>
+                            <span class="soft-skill">Commitment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks">
+                <div class="section-title right-div">Tasks</div>
+                <ol class="list">
+                    <li class="item">
+                        <h2 class="headline">API development</h2>
+                        <span>
+                            I built a fully functional API from scratch. 
+                            It was built in PHP and handled any type of error that could occur.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Creative design</h2>
+                        <span>
+                            The API was quite advanced, it computed the shortest flight routes 
+                            between each destinations and avoided unnecessary flights. It also used a lot of various external APIs such as TMDB or Amadeus.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Enhanced usability</h2>
+                        <span>
+                            I went further than the API by building a little website to select 
+                            the correct movie and the various parameters so that the process is 
+                            more interactive and user-friendly.
+                        </span>
+                    </li>
+                </ol>
+            </div>
+            <div class="navigator">              
+                <div id="arrow_2" class="arrow_2 arrow-wrapper">
+                    <a onclick="prevSlide()">
+                        <div class="arrow arrow--left">
+                            <span>Previous Project</span>
+                        </div>
+                    </a>
+                    <div class="block">
+                        <h1>Projects</h1>
+                    </div>
+                    <a onclick="nextSlide()">
+                        <div class="arrow arrow--right">
+                            <span>Next Project</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide7">
+            <div class="header">
+                <div class="header-left">
+                    <p class="project-name josefin">Project Manager</p>
+                    <p class="date josefin">September 2020 - April 2021 (8 months)</p>
+                    <p class="location josefin">IUT de Bayonne, Bayonne, France</p>
+                </div>
+                <div class="header-right">
+                    <img id="openCEMS" src="img/opencems.png" alt="OpenCEMS logo">
+                </div>
+            </div>
+            <div class="skills">
+                <div class="inner-skills">
+                    <div class="section-title left-div">Project description
+                        <div class="content">
+                            Academic project where I worked in a team of for with the 
+                            industrial chaire OpenCEMS to help improve their data structure and 
+                            find a solution to generate forms automatically.
+                        </div>
+                    </div>
+                    <div class="section-title mid-div">Technical skills
+                        <div class="logos">
+                            <div class="logo-container">
+                                <img src="img/js.webp" alt="JS logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-title right-div">Soft skills
+                        <div class="soft-skills">
+                            <span class="soft-skill">Leadership</span>
+                            <span class="soft-skill">Autonomy</span><br>
+                            <span class="soft-skill">Time-management</span>
+                            <span class="soft-skill">Conflict resolution</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks">
+                <div class="section-title right-div">Tasks</div>
+                <ol class="list">
+                    <li class="item">
+                        <h2 class="headline">Team management</h2>
+                        <span>
+                            I managed the tasks of the teams in time and attributed them to 
+                            the correct persons, I also planned the various meetings with the 
+                            clients.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Conflict resolution</h2>
+                        <span>
+                            Handled the various conflict between the members (conflicting 
+                            personalities and work-style conflicts) by talking to each concerned member 
+                            and by doing a better segmentation of the tasks to avoid conflict.
+                        </span>
+                    </li>
+                    <li class="item">
+                        <h2 class="headline">Thorough solution search</h2>
+                        <span>
+                            My part of the project demanded an extensive search for 
+                            solutions and produce various reports to find a solution that 
+                            would suit the client. That trained me a lot on the interactions 
+                            that can happen when working with a demanding client.
+                        </span>
+                    </li>
+                </ol>
+            </div>
+            <div class="navigator">              
+                <div id="arrow_2" class="arrow_2 arrow-wrapper">
+                    <a onclick="prevSlide()">
+                        <div class="arrow arrow--left">
+                            <span>Previous Project</span>
+                        </div>
+                    </a>
+                    <div class="block">
+                        <h1>Projects</h1>
+                    </div>
+                    <a onclick="nextSlide()">
+                        <div class="arrow arrow--right">
+                            <span>Next Project</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/projects.js"></script>
 </body>
 </html>

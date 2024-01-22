@@ -45,10 +45,44 @@ document.addEventListener("DOMContentLoaded", function() {
             case "Creativity":
                 span.style.backgroundColor = "rgb(255, 167, 123)" //orange
                 break;
+            case "Positive attitude":
+                span.style.backgroundColor = "rgb(255, 123, 123)" //red
+                break;
+            case "Presentation skills":
+                span.style.backgroundColor = "rgb(212, 150, 255)" //purple
+                break;
+            case "Attention to detail":
+                span.style.backgroundColor = "rgb(199, 99, 255)" //purple
+                break;
+            case "Commitment":
+                span.style.backgroundColor = "rgb(146, 51, 200)" //purple
+                break;
+            case "Leadership":
+                span.style.backgroundColor = "rgb(225, 40, 40)" //red
+                break;
+            case "Conflict resolution":
+                span.style.backgroundColor = "rgb(40, 225, 40)" //green
+                break;
             default:
                 break;
         }
     }
+    var $videoSrc;  
+    $('.video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+    });
+        
+    // when the modal is opened autoplay it  
+    $('#myModal').on('shown.bs.modal', function (e) {
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    })
+    
+    // stop playing the youtube video when I close the modal
+    $('#myModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src',$videoSrc); 
+    })
 });
 
 
@@ -71,20 +105,3 @@ function checkKey(e) {
     }
 
 }
-date = new Date()
-wheelTimer = date.getTime()
-document.addEventListener('wheel', function(event) {
-    if ((new Date().getTime() - wheelTimer) > 250) {
-        // Get the distance that the mouse wheel was rotated
-        const deltaX = event.deltaX;
-        const deltaY = event.deltaY;
-        
-        // Check the value of delta
-        if (deltaX > 0 || deltaY > 0) {
-            nextSlide() 
-        } else if (deltaX < 0 || deltaY < 0) {
-            prevSlide() 
-        }
-        wheelTimer = new Date().getTime()
-    }
-    });

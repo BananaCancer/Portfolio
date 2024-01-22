@@ -4,7 +4,7 @@
 
 .header {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 
@@ -32,7 +32,7 @@
 
 .project-name {
     font-size: 3em;
-    
+    display: inline;
 }
 
 .date {
@@ -46,39 +46,65 @@
 }
 
 .skills {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 50px;
-    display: flex;
 }
+
+.inner-skills {
+    list-style: none;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .section-title {
     font-family: "Josefin";
-    font-size: 1.5em;
     margin-bottom: 15px;
+    width: 30%;
+    display: inline-block;
+    clear: both;
+    counter-increment: list;
+    font-size: 1.5rem;
+    line-height: 1.375;
+    position: relative;
+    width: 30%;
+    text-align: justify;
 }
 
 .left-div {
-    flex: 0.5 0 auto; /* Prevent left div from growing */
+    text-align: justify;
+    width: 45%;
 }
+
 .mid-div {
-    flex: 0.25 0 auto; /* Prevent left div from growing */
+    width: 15%;
 }
 
 .right-div {
-    flex: 1; /* Allow center div to grow and take available space */
     text-align: left;
+    width: 30%;
+}
+
+.left-div .content {
+    font-size: 18px;
+    padding-top: 2px;
+    padding-left: 10px;
+    font-weight: lighter;
 }
 
 .logos, .soft-skills {
     display: block;
     margin-top: 10px;
+    padding-left: 10px;
 }
 
 .logo-container {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
     flex: 1;
@@ -86,7 +112,7 @@
   
 .logo-container img {
     display: block;
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 .soft-skill {
@@ -101,7 +127,6 @@
 
 .tasks {
     margin-left: 50px;
-    margin-top: 30px;
 }
 
 .soft-skill {
@@ -120,26 +145,36 @@
 
 .list {
     list-style: none;
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    counter-reset: item;
+    padding: 0;
 }
 
 .item {
     display: inline-block;
-    clear: both;
-    counter-increment: list;
-    font-size: 1.1rem;
+    clear: both;    
+    font-size: 0.8rem;
     line-height: 1.375;
     position: relative;
     width: 30%;
     text-align: justify;
+    counter-increment: item;
+}
+
+.item span {
+    font-size: 18px;
+    padding-top: 2px;
+    font-weight: lighter;
+    font-family: "Josefin";
 }
 
 .item:before {
     font: bold 2.25rem/1 var(--font-number);
-    content: counter(list);
+    content: counter(item);
     width: 5rem;
     height: 5rem;
     float: left;
@@ -172,6 +207,7 @@
     padding: 0rem 0 0 0;
     margin: 0 0 1rem 0;
     text-align: left;
+    font-size: 20px;
 }
 
 /* Navigateur */
@@ -200,6 +236,9 @@
     text-align: center;
     text-transform: uppercase;
     transition: opacity 0.3s;
+    font-size: 2rem;
+    font-family: 'bodyFont', sans-serif;
+    font-weight: none;
 }
  .arrow-wrapper:hover h1 {
     opacity: 1;
@@ -299,5 +338,70 @@
 }
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+
+
+.modal-body {
+    position:relative;
+    padding:0px;
+}
+.close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#fff;
+    opacity:1;
+}
+
+.header-right button {
+    background-color: #fdfdfd;
+    color: #120618;
+    border: none;
+}
+
+.header-right button:hover {
+    background-color: #120618;
+    color: #fdfdfd;
+    border: white 2px solid;
+}
+
+.header-right button:active, .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #120618;
+    color: #fdfdfd;
+    border: white 2px solid;
+}
+
+.header-right button:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+*, ::after, ::before {
+    box-sizing: unset;
+}
+
+.link-repo {
+    display: block;
+    height: 50px;
+    width: auto;
+}
+
+
+
+#openCEMS {
+    background-color: white;
+}
+
+a {
+    color: #ccbafe;
+    text-decoration: underline;
 }

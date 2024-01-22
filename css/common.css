@@ -24,3 +24,97 @@ body {
 .page {
     transition: transform 0.5s;
 }
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+}
+
+.nav-item {
+    all: unset;
+}
+
+.nav-item:hover {
+    text-decoration: none;
+}
+
+.nav-item:not(.active):hover {
+    background-color: white;
+    color: #120618;
+    transition: 0.5s;
+}
+
+.nav-item {
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav-item.active {
+    background-color: #c09fd0;
+    color: #120618;
+}
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+.dropdown:hover {
+    border-bottom: #120618 2px solid;
+}
+nav .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.square {
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 0px;
+    background-color: white;
+    transition: height 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform-origin: top;
+    border-right: #dedede solid 1px;
+}
+
+.square:nth-child(1) { transition-delay: 0.1s; }
+.square:nth-child(2) { transition-delay: 0.15s; }
+.square:nth-child(3) { transition-delay: 0.2s; }
+.square:nth-child(4) { transition-delay: 0.25s; }
+
+.square img {
+    display: block;
+    max-height: 25px;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.square:hover img {
+    transform: scale(1.2);
+    max-height: 25px;
+    width: auto;
+}
+  
+
+.dropdown:hover .content{
+    border-top: #120618 solid 2px;
+}
