@@ -8,9 +8,36 @@
     src: url('../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
 }
 
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('../fonts/Kalam/Kalam-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Dancing';
+    src: url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+}
+
+.kalam {
+    font-family: 'Kalam', sans-serif;
+}
+
+.comfortaa {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.dancing {
+    font-family: 'Dancing', sans-serif;
+}
+
 body {
     background-color: #120618;
-    font-family: 'bodyFont', sans-serif;
+    font-family: 'Josefin', sans-serif;
     color: aliceblue;
     margin: 0;
 }
@@ -110,6 +137,7 @@ nav .content {
 
 .square:hover img {
     transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
     max-height: 25px;
     width: auto;
 }
@@ -118,3 +146,16 @@ nav .content {
 .dropdown:hover .content{
     border-top: #120618 solid 2px;
 }
+
+.col1 {
+    color: #18d3b0;
+}
+
+.col2 {
+    color: #d35e18;
+}
+
+.col3 {
+    color: #8ff628;
+}
+

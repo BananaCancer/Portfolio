@@ -44,10 +44,21 @@ arrow.addEventListener("click", function() {
             menu3.style.opacity = "1";
             menu4.style.transform = "translateX(0)";
             menu4.style.opacity = "1";
+
+            contacts = document.getElementsByClassName("contact")
+
+            for (let index = 0; index < contacts.length; index++) {
+                const element = contacts[index];
+                element.style.transform = "translateY(0)";
+                element.style.opacity = "1";
+            }
+
         }, 500);
     } else {
         page1.style.transform = 'translateY(0%)';
         page2.style.transform = 'translateY(100%)';
     }
+
+    
 })
 

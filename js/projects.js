@@ -83,6 +83,16 @@ document.addEventListener("DOMContentLoaded", function() {
         // a poor man's stop video
         $("#video").attr('src',$videoSrc); 
     })
+    butterup.options.toastLife = 5000
+    butterup.toast({
+        title:'For an easier navigation',
+        message:'You can use the keyboard arrows for navigation',
+        type:'info',
+        icon: true,
+        position: 'top-right',
+        dismissable: true,
+        
+      });
 });
 
 

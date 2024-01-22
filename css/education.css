@@ -9,13 +9,18 @@
 .flex-container .col {
     width: 30%;
     max-width: 30%;
-    background-color: #dcdcdc;
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 20px 25px;
     border-radius: 2%;
-    color: black;
+    background: linear-gradient(to right bottom, hsla(277.2, 15%, 62.2%, 0.18), hsla(254.1, 55.5%, 46.7%, 0.18));
+    color: white;
+    box-shadow: 5px 5px 5px rgba(203, 120, 255, 0.371), 
+    -5px -5px 5px rgba(203, 120, 255, 0.371), 
+    5px -5px 5px rgba(255, 255, 255, 0.344), 
+    -5px 5px 5px rgba(255, 255, 255, 0.344);
+    margin-bottom: 15px;
 }
 
 .img-container {
@@ -52,6 +57,7 @@
     margin-top: 8px;
 }
 
-.description p {
-    
+.img-container:nth-child(1) img {
+    background-color: white;
+    padding: 5px;
 }

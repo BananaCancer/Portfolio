@@ -24,6 +24,7 @@ html {
     top: 30%;
     right: 50px;
     text-align: right;
+    line-height: 1.5;
 }
 
 #text3 {
@@ -49,6 +50,12 @@ html {
     opacity: 0;
     transition: opacity 1s, transform 1s;
 }
+
+.fade-in-top {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}m
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -299,6 +306,76 @@ html {
 #menu4:before {
     background: #f50057;
 }
+#contact-container {
+    width: 100%;
+    left: 0px;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.flex-container {
+    width: 35%;
+    left: auto;
+    right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    position: initial;
+    width: 75px;
+    height: 75px;
+}
+
+.contact:before {
+    transform-origin: top; /* Set transform-origin to top for the top animation */
+    transform: scaleY(0); /* Initially set scaleY to 0 to start from the top */
+    transition: transform 0.5s; /* Add transition for the scaleY property */
+}
+
+#contact1::before {
+    background: #4aebe8;
+}
+
+#contact2::before {
+    background: #f8be21;
+}
+
+#contact3::before {
+    background: #49f37c;
+}
+
+#contact4::before {
+    background: #f50057;
+}
+
+.contact:hover:before {
+    transform: scaleY(1);
+}
+
 .list a {
     all: unset;
+}
+
+img {
+    height: 1em;
+
+}
+
+.square img {
+    max-width: 45px;
+    max-height: unset;
+    height: auto;
+}
+
+.square:hover img {
+    max-width: 45px;
+    max-height: unset;
+    height: auto;
+}
+
+.round {
+    border-radius: 50%;
 }

@@ -216,6 +216,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
  .arrow-wrapper {
@@ -394,8 +395,6 @@ body {
     height: 50px;
     width: auto;
 }
-
-
 
 #openCEMS {
     background-color: white;
