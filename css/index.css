@@ -68,7 +68,7 @@ html {
 }
 .the-arrow.-left {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 0;
 }
 .the-arrow.-left > .shaft {
@@ -85,9 +85,9 @@ html {
 .the-arrow.-left > .shaft:after {
     transform: rotate(0);
 }
-.the-arrow.-right {
+/*.the-arrow.-right {
     top: 3px;
-}
+}*/
 .the-arrow.-right > .shaft {
     width: 1px;
     transition-delay: 0.2s;
