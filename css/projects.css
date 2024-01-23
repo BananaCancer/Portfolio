@@ -443,6 +443,9 @@ a {
         text-align: center;
         margin-right: 0;
     }
+    .arrow_2 .arrow span {
+        display: none;
+    }
     .arrow_2 .arrow:hover span {
         transition: none;
     }
@@ -451,9 +454,5 @@ a {
     }
     .arrow_2 .arrow.arrow--left:hover:before {
         right: 0%;
-    }
-
-    .arrow_2 .arrow:hover span {
-        
     }
 }
