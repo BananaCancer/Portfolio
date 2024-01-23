@@ -267,33 +267,33 @@ html {
     text-align: left;
     left: 50px;
     top: 20%;
-    border-left: 2px solid #4aebe8;
+    border-left: 2px solid #18d3b0;
 }
 
 #menu1:before {
-    background: #4aebe8;
+    background: #18d3b0;
 }
 
 #menu2 {
     text-align: left;
     left: 50px;  
     top: 60%;  
-    border-left: 2px solid #f8be21;
+    border-left: 2px solid #d35e18;
 }
 
 #menu2:before {
-    background: #f8be21;
+    background: #d35e18;
 }
 
 #menu3 {
     text-align: right;
     right: 50px;
     top: 20%;
-    border-right: 2px solid #49f37c;
+    border-right: 2px solid #8ff628;
 }
 
 #menu3:before {
-    background: #49f37c;
+    background: #8ff628;
 }
 
 #menu4 {
@@ -336,15 +336,15 @@ html {
 }
 
 #contact1::before {
-    background: #4aebe8;
+    background: #18d3b0;
 }
 
 #contact2::before {
-    background: #f8be21;
+    background: #d35e18;
 }
 
 #contact3::before {
-    background: #49f37c;
+    background: #8ff628;
 }
 
 #contact4::before {
