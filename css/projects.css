@@ -27,7 +27,7 @@
 
 .header-right img{
     max-height: 100px;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .project-name {
@@ -435,5 +435,12 @@ a {
     }
     .date, .location {
         font-size: 20px;
+    }
+    .header-left {
+        margin-left: 10px;
+    }
+    .header-right {
+        text-align: center;
+        margin-right: 0;
     }
 }

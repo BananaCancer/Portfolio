@@ -166,4 +166,9 @@ nav .content {
     .nav-item {
         font-size: 13px;
     }
+    nav .content {
+        left: unset;
+        width: 100vw;
+        right: 0;
+    }
 }
