@@ -404,3 +404,36 @@ a {
     color: #ccbafe;
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: block;
+    }
+    .project-name {
+        font-size: 25px;
+    }
+    .logo-container img {
+        height: 25px;
+    }
+    .inner-skills {
+        display: block;
+    }
+    .left-div, .mid-div, .right-div {
+        width: 100%;
+    }
+    .list {
+        display: block;
+    }
+    .item {
+        width: 100%;
+    }
+    .skills {
+        margin-left: 10px;
+    }
+    .tasks {
+        margin-left: 10px;
+    }
+    .date, .location {
+        font-size: 20px;
+    }
+}

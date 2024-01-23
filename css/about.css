@@ -76,3 +76,24 @@ a {
     color: #ccbafe;
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+    .row:nth-child(1) {
+        font-size: 60px;
+    }
+    .row {
+        display: block;
+    }
+    
+
+    .row:nth-child(2) p, .row:nth-child(4) p, .row:nth-child(6) p {
+        width: 90%;
+        font-size: 20px;
+        padding-left: 5%;
+    }
+    .row:nth-child(3) p, .row:nth-child(5) p, .row:nth-child(7) p {
+        width: 90%;
+        font-size: 20px;
+        padding-left: 5%;
+    }
+}

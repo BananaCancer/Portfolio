@@ -23,6 +23,24 @@
     margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        display: block;
+    }
+    .flex-container .col {
+        width: 90%;
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .subtitle {
+        font-size: 19px;
+    }
+}
+
 .img-container {
     height: 120px;
     min-height: 120px;
