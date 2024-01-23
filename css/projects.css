@@ -455,4 +455,7 @@ a {
     .arrow_2 .arrow.arrow--left:hover:before {
         right: 0%;
     }
+    .block {
+        width: 200px;
+    }
 }
