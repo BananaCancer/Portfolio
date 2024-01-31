@@ -21,4 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
       reduceContactHeight()
     }
   })
+  $('img').each(function () {
+    var altText = $(this).attr('alt');
+    $(this).attr('title', altText);
+  });
 });
