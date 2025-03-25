@@ -28,40 +28,43 @@ document.addEventListener("DOMContentLoaded", function() {
     
         switch (span.textContent) {
             case "Autonomy":
-                span.style.backgroundColor = "#f2fa65" //jaune
+                span.style.backgroundColor = "#f2fa65"
                 break;
             case "Communication":
-                span.style.backgroundColor = "#96f6ff" //bleu clair
+                span.style.backgroundColor = "#96f6ff"
                 break;
             case "Decision-making":
-                span.style.backgroundColor = "#ec95ff" //rose
+                span.style.backgroundColor = "#ec95ff"
                 break;
             case "Time-management":
-                span.style.backgroundColor = "rgb(149, 161, 255)" //bleu
+                span.style.backgroundColor = "rgb(149, 161, 255)"
                 break;
             case "Teamwork":
-                span.style.backgroundColor = "rgb(167, 255, 149)" //vert
+                span.style.backgroundColor = "rgb(167, 255, 149)"
                 break;
             case "Creativity":
-                span.style.backgroundColor = "rgb(255, 167, 123)" //orange
+                span.style.backgroundColor = "rgb(255, 167, 123)"
                 break;
             case "Positive attitude":
-                span.style.backgroundColor = "rgb(255, 123, 123)" //red
+                span.style.backgroundColor = "rgb(255, 123, 123)"
                 break;
             case "Presentation skills":
-                span.style.backgroundColor = "rgb(212, 150, 255)" //purple
+                span.style.backgroundColor = "rgb(212, 150, 255)"
                 break;
             case "Attention to detail":
-                span.style.backgroundColor = "rgb(199, 99, 255)" //purple
+                span.style.backgroundColor = "rgb(199, 99, 255)"
                 break;
             case "Commitment":
-                span.style.backgroundColor = "rgb(146, 51, 200)" //purple
+                span.style.backgroundColor = "rgb(146, 51, 200)"
                 break;
             case "Leadership":
-                span.style.backgroundColor = "rgb(225, 40, 40)" //red
+                span.style.backgroundColor = "rgb(225, 40, 40)"
                 break;
             case "Conflict resolution":
-                span.style.backgroundColor = "rgb(40, 225, 40)" //green
+                span.style.backgroundColor = "rgb(40, 225, 40)"
+                break;
+            case "Curiosity":
+                span.style.backgroundColor = "rgb(225, 182, 40)" 
                 break;
             default:
                 break;
